@@ -15,7 +15,7 @@ running on GitHub Pages.
 - **Real workflows** — the actual job, not screens: orders move from guest to kitchen to bill; bookings get references; sales get recorded.
 - **Real data** — a believable business inside each system: a real menu, real prices, real hours. Nothing placeholder.
 - **Live from day one** — deployed on GitHub Pages and verified end to end, including on a phone, before listing.
-- **Cloud database** — state lives in Neon Postgres behind a Cloudflare Worker, so every device sees the same floor. Offline, the system keeps working locally.
+- **Cloud database** — state lives in Neon Postgres behind a Cloudflare Worker, so every device sees the same floor. The Copper Kitchen's cloud sync is being connected now; offline, the system keeps working locally.
 
 ## Local preview
 
