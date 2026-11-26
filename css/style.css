@@ -154,6 +154,22 @@ h1 {
 
 .card-photo { position: relative; margin: 0; min-height: 320px; }
 
+/* Brand panel for systems without a photo: the business's own mark. */
+.card-visual {
+  background: #17130e;
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  gap: 14px; text-align: center; padding: 24px;
+}
+.card-visual-mark {
+  width: 76px; height: 76px; border-radius: 18px; background: #a97c1f; color: #fff;
+  display: grid; place-items: center;
+  font-family: Georgia, 'Times New Roman', serif; font-size: 2.4rem; font-weight: 700;
+}
+.card-visual-name {
+  color: #f5efe3; font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.5rem; line-height: 1.25;
+}
+
 .card-photo .status {
   position: absolute;
   top: 14px;

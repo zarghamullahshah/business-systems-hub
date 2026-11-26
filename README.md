@@ -9,6 +9,7 @@ running on GitHub Pages.
 | System | Type | Live demo |
 | --- | --- | --- |
 | [The Copper Kitchen](https://zarghamullahshah.github.io/restaurant-management-system/) | Restaurant | [Demo](https://zarghamullahshah.github.io/restaurant-management-system/) · [Code](https://github.com/zarghamullahshah/restaurant-management-system) |
+| [Sharp Cut Barber Studio](https://zarghamullahshah.github.io/barber-booking-system/) | Barber | [Demo](https://zarghamullahshah.github.io/barber-booking-system/) · [Code](https://github.com/zarghamullahshah/barber-booking-system) |
 
 ## How they're built
 
