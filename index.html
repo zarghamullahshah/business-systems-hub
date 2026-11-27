@@ -8,7 +8,9 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="top">
+<div class="scroll-progress" id="scroll-progress"></div>
+
+<header class="top" id="top">
   <a class="brand" href="./">Zargham Ullah Shah <span>Business Systems</span></a>
   <nav>
     <a href="#systems">Systems</a>
@@ -18,29 +20,45 @@
 </header>
 
 <section class="hero">
-  <div class="hero-copy">
-    <p class="eyebrow">Live systems, not mockups</p>
-    <h1>Systems that run<br>real businesses.</h1>
-    <p class="lede">Every system here is a working web app — real workflows, real data, staff roles, billing and bookings — running live on GitHub Pages. One new business type at a time.</p>
-    <p class="hero-links">
+  <div class="hero-bg" aria-hidden="true">
+    <img class="hero-photo" id="hero-photo" src="assets/interior.jpg" alt="" fetchpriority="high">
+    <span class="hero-shade"></span>
+    <span class="hero-glow"></span>
+  </div>
+  <div class="hero-inner">
+    <p class="eyebrow reveal">Live systems, not mockups</p>
+    <h1 id="hero-title">Systems that run<br>real businesses.</h1>
+    <p class="lede reveal">Every system here is a working web app — real workflows, real data, staff roles, billing and bookings — running live on GitHub Pages. One new business type at a time.</p>
+    <p class="hero-links reveal">
       <a class="btn" href="#systems">See the systems</a>
       <a class="btn ghost" href="https://zarghamullahshah.github.io/Portfolio/" target="_blank" rel="noopener">Portfolio</a>
     </p>
+    <div class="hero-stats reveal">
+      <div class="stat"><strong><span class="count" data-count="2">0</span></strong><span>systems live</span></div>
+      <div class="stat"><strong><span class="count" data-count="27">0</span></strong><span>dishes &amp; services priced in Rs</span></div>
+      <div class="stat"><strong><span class="count" data-count="4">0</span></strong><span>staff workspaces</span></div>
+      <div class="stat"><strong><span class="count" data-count="0">0</span></strong><span>sign-ups to try one</span></div>
+    </div>
   </div>
-  <figure class="hero-photo">
-    <img src="assets/interior.jpg" alt="A restaurant dining room in the evening">
-  </figure>
+  <a class="scroll-cue" href="#systems" aria-label="Scroll to the systems"><span></span></a>
 </section>
 
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>The Copper Kitchen — Restaurant</span><i>·</i><span>Sharp Cut — Barber Studio</span><i>·</i><span>Cafe — coming next</span><i>·</i><span>School — coming next</span><i>·</i>
+    <span>The Copper Kitchen — Restaurant</span><i>·</i><span>Sharp Cut — Barber Studio</span><i>·</i><span>Cafe — coming next</span><i>·</i><span>School — coming next</span><i>·</i>
+  </div>
+</div>
+
 <section class="systems" id="systems">
-  <div class="section-head">
+  <div class="section-head reveal">
     <h2>Live systems</h2>
     <p>Each one is open source and running. Click through and use it — place an order, book a table, run the floor.</p>
   </div>
 
-  <article class="card">
+  <article class="card reveal" data-reveal="left">
     <figure class="card-photo">
-      <img src="assets/interior.jpg" alt="The Copper Kitchen dining room">
+      <img src="assets/interior.jpg" alt="The Copper Kitchen dining room" loading="lazy">
       <span class="status">Live</span>
     </figure>
     <div class="card-body">
@@ -63,10 +81,9 @@
     </div>
   </article>
 
-  <article class="card" style="margin-top: 22px">
-    <figure class="card-photo card-visual">
-      <span class="card-visual-mark">S</span>
-      <span class="card-visual-name">Sharp Cut<br>Barber Studio</span>
+  <article class="card reveal" data-reveal="right">
+    <figure class="card-photo">
+      <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=1200&amp;q=80&amp;auto=format&amp;fit=crop" alt="Barber chairs and mirrors inside a barbershop" loading="lazy">
       <span class="status">Live</span>
     </figure>
     <div class="card-body">
@@ -89,36 +106,47 @@
     </div>
   </article>
 
-  <p class="next">Next up: cafe, school and more — one system at a time, each built the same way: real workflows, real data, live from day one.</p>
+  <p class="next reveal">Next up: cafe, school and more — one system at a time, each built the same way: real workflows, real data, live from day one.</p>
 </section>
 
 <section class="how" id="how">
-  <div class="section-head">
+  <div class="section-head reveal">
     <h2>How they're built</h2>
   </div>
   <div class="how-grid">
-    <div>
+    <div class="reveal">
       <h3>Real workflows</h3>
       <p>Not screens — the actual job. Orders move from guest to kitchen to bill; bookings get references; sales get recorded.</p>
     </div>
-    <div>
+    <div class="reveal" data-reveal="right">
       <h3>Real data</h3>
       <p>Every system ships with a believable business inside it: a real menu, real prices, real opening hours. Nothing placeholder.</p>
     </div>
-    <div>
+    <div class="reveal">
       <h3>Live from day one</h3>
       <p>Each system is deployed on GitHub Pages and verified end to end before it is listed here — including on a phone.</p>
     </div>
-    <div>
+    <div class="reveal" data-reveal="right">
       <h3>Cloud database</h3>
       <p>State lives in Neon Postgres behind a Cloudflare Worker, so every device sees the same floor. The Copper Kitchen's cloud sync is being connected now; offline, the system keeps working locally.</p>
     </div>
   </div>
 </section>
 
+<section class="cta reveal">
+  <h2>Try one live — no sign-up, no install.</h2>
+  <p>Open the restaurant, seat a table, close a bill. Or book a chair in Sahiwal. Two minutes, and you'll know whether it's real.</p>
+  <p class="cta-links">
+    <a class="btn" href="https://zarghamullahshah.github.io/restaurant-management-system/" target="_blank" rel="noopener">Open The Copper Kitchen</a>
+    <a class="btn ghost" href="https://zarghamullahshah.github.io/barber-booking-system/" target="_blank" rel="noopener">Book a chair at Sharp Cut</a>
+  </p>
+</section>
+
 <footer>
   <p>Built by <a href="https://github.com/zarghamullahshah" target="_blank" rel="noopener">Zargham Ullah Shah</a> — Full Stack Web Developer, Pakistan.</p>
-  <p class="fine">Every system is open source. Photo: Unsplash.</p>
+  <p class="fine">Every system is open source. Photos: Unsplash.</p>
 </footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
